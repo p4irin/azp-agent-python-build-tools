@@ -14,6 +14,7 @@ sudo add-apt-repository -y ppa:deadsnakes/ppa
 sudo apt-get update
 sudo -E apt-get -y install python3.8 python3.8-venv \
 python3.9 python3.9-venv \
+python3.10-venv \
 python3.11 python3.11-venv \
 build-essential
 
