@@ -19,7 +19,7 @@ build-essential
 
 ### Install Python versions in virtual environments in the agent's tool cache
 #
-versions=('3.8' '3.9' '3.11')
+versions=('3.8' '3.9' '3.10' '3.11')
 for version in ${versions[@]}; do
     full_version=$(eval "python${version} -V"| cut -d ' ' -f 2)
     mkdir -p Python/${full_version}
