@@ -14,7 +14,7 @@ This is what I used. So, you might need to adapt.
 
 ## build-tools.sh
 
-This script will install Python versions in the agent's tool cache according to the requirements explained [here](https://learn.microsoft.com/en-us/azure/devops/pipelines/tasks/reference/use-python-version-v0?view=azure-pipelines&viewFallbackFrom=azure-devops#how-can-i-configure-a-self-hosted-agent-to-use-this-task:~:text=How%20can%20I%20configure%20a%20self%2Dhosted%20agent%20to%20use%20this%20task%3F). By default this cache is located at _work/_tool in the directory where the agent is installed. The Python versions installed are from the deadsnakes apt repository. After installing from the deadsnakes repository the script installs each Python version using the venv package in the tool cache.
+This script will install Python versions in the agent's tool cache according to the requirements explained [here](https://learn.microsoft.com/en-us/azure/devops/pipelines/tasks/reference/use-python-version-v0?view=azure-pipelines&viewFallbackFrom=azure-devops#how-can-i-configure-a-self-hosted-agent-to-use-this-task:~:text=How%20can%20I%20configure%20a%20self%2Dhosted%20agent%20to%20use%20this%20task%3F). By default this cache is located at _work/_tool in the directory where the agent is installed. The Python versions installed are from the deadsnakes apt repository. After installing from the deadsnakes repository the script installs each Python version using the venv package in the tool cache. The versions installed are 3.8, 3.9, 3.10 and 3.11
 
 ### Usage
 
