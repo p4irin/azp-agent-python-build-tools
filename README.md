@@ -1,7 +1,7 @@
 # Install Python build tools on an Azure Pipelines self-hosted agent
 
 To build and test an application on different versions of Python you need to install them when using a self-hosted agent with Azure Pipelines. Most of everything else you need can be installed with pip.
-When installed on a self-hosted agent you can use the UsePythonVersion@0 in your Azure pipeline as you would with a Microsoft hosted agent. Installation is required as UsePythonVersion@0 doesn't support automatic downloading of missing Python versions on self-hosted agents.
+When installed on a self-hosted agent you can use the UsePythonVersion@0 task in your Azure pipeline as you would with a Microsoft hosted agent. Installation is required as UsePythonVersion@0 doesn't support automatic downloading of missing Python versions on self-hosted agents.
 
 ## Stack
 
@@ -28,3 +28,9 @@ This script will install Python versions in the agent's tool cache according to 
    $ ./build-tools.sh
    ```
 1. Restart your agent. You should be able to run jobs in a matrix using different Python versions.
+
+## Testing
+
+Tests executed on the Python versions installed by _build-tools.sh_ can be found [here](https://dev.azure.com/p4irin/playground/_git/test_raspberry_pi_hosted_agent). Those tests were run on Raspberry Pis 4 with 8Gb memory.
+
+The script it self, setting op the Python tool cache's directory structure with Python versions, is tested in a Docker container using the image build by the Dockerfile in this repo.
