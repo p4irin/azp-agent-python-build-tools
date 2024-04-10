@@ -1,3 +1,5 @@
+[![azp agent python build tools](https://github.com/p4irin/azp-agent-python-build-tools/actions/workflows/main.yml/badge.svg)](https://github.com/p4irin/azp-agent-python-build-tools/actions/workflows/main.yml)
+
 # Install Python build tools on an Azure Pipelines self-hosted agent
 
 To build and test an application on different versions of Python you need to install them when using a self-hosted agent with Azure Pipelines. Most of everything else you need can be installed with pip.
@@ -33,4 +35,6 @@ This script will install Python versions in the agent's tool cache according to 
 
 Tests executed on the Python versions installed by _build-tools.sh_ can be found [here](https://dev.azure.com/p4irin/playground/_git/test_raspberry_pi_hosted_agent). Those tests were run on Raspberry Pis 4 with 8Gb memory.
 
-The script itself, setting op the Python tool cache's directory structure with Python versions, is tested in a Docker container using the image build by the Dockerfile in this repo.
+The script itself, setting op the Python tool cache's directory structure with Python versions, can be tested locally in a Docker container using the image build by the Dockerfile in this repo.
+
+And, the script is tested by the repo's workflow.
