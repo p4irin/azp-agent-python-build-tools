@@ -26,5 +26,5 @@ jobs:
       run: ./fake-tool-cache-dir/Python/3.9/x64/bin/python -V
     - name: Verify Python 3.10
       run: ./fake-tool-cache-dir/Python/3.10/x64/bin/python -V
-    - name: Verify Python 3.12
-      run: ./fake-tool-cache-dir/Python/3.12/x64/bin/python -V      
+    - name: Verify Python 3.11
+      run: ./fake-tool-cache-dir/Python/3.11/x64/bin/python -V      
