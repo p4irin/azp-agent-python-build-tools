@@ -21,5 +21,4 @@ jobs:
         cd ./fake-tool-cache-dir
         ./build-tools.sh
     - name: Verify Python 3.8
-      run: |
-        docker run -it --rm ubuntu:test-build-tools-script-on-jammy -c "./Python/3.8/x64/bin/python -V"
+      run: ./Python/3.8/x64/bin/python -V
