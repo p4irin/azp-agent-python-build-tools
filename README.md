@@ -1,4 +1,7 @@
 [![azp agent python build tools](https://github.com/p4irin/azp-agent-python-build-tools/actions/workflows/main.yml/badge.svg)](https://github.com/p4irin/azp-agent-python-build-tools/actions/workflows/main.yml)
+![Static Badge](https://img.shields.io/badge/Raspberry_Pi-4B_8GB-red?logo=raspberrypi&logoColor=red)
+![Static Badge](https://img.shields.io/badge/Ubuntu-22.04_LTS-orange?logo=ubuntu)
+
 
 # Install Python build tools on an Azure Pipelines self-hosted agent
 
