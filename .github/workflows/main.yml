@@ -1,0 +1,25 @@
+name: azp agent python build tools
+
+on:
+  push:
+    branches:
+    - main
+  workflow_dispatch:
+
+jobs:
+  test:
+    name: Test build-tool.sh
+    runs-on: ubuntu-22.04
+
+    steps:
+    - uses: actions/checkout@v4
+    - name: Run build-tools.sh in a fake tool cache directory
+      run: |
+        mkdir ./fake-tool-cache-dir
+        chmod u+x build-tools.sh
+        cp build-tools.sh ./fake-tool-cache-dir
+        cd ./fake-tool-cache-dir
+        ./build-tools.sh
+    - name: Verify Python 3.8
+      run: |
+        docker run -it --rm ubuntu:test-build-tools-script-on-jammy -c "./Python/3.8/x64/bin/python -V"
