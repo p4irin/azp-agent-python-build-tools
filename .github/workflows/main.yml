@@ -22,3 +22,9 @@ jobs:
         ./build-tools.sh
     - name: Verify Python 3.8
       run: ./fake-tool-cache-dir/Python/3.8/x64/bin/python -V
+    - name: Verify Python 3.9
+      run: ./fake-tool-cache-dir/Python/3.9/x64/bin/python -V
+    - name: Verify Python 3.10
+      run: ./fake-tool-cache-dir/Python/3.10/x64/bin/python -V
+    - name: Verify Python 3.12
+      run: ./fake-tool-cache-dir/Python/3.12/x64/bin/python -V      
