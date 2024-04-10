@@ -33,4 +33,4 @@ This script will install Python versions in the agent's tool cache according to 
 
 Tests executed on the Python versions installed by _build-tools.sh_ can be found [here](https://dev.azure.com/p4irin/playground/_git/test_raspberry_pi_hosted_agent). Those tests were run on Raspberry Pis 4 with 8Gb memory.
 
-The script it self, setting op the Python tool cache's directory structure with Python versions, is tested in a Docker container using the image build by the Dockerfile in this repo.
+The script itself, setting op the Python tool cache's directory structure with Python versions, is tested in a Docker container using the image build by the Dockerfile in this repo.
