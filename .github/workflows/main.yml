@@ -21,4 +21,4 @@ jobs:
         cd ./fake-tool-cache-dir
         ./build-tools.sh
     - name: Verify Python 3.8
-      run: ./Python/3.8/x64/bin/python -V
+      run: ./fake-tool-cache-dir/Python/3.8/x64/bin/python -V
